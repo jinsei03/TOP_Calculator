@@ -1,1 +1,2 @@
 # TOP_Calculator
+Final project for the Odin Project Foundations course. The original logic was very difficult and it took me a long time to actually get it to work. Even just trying to get it to add two numbers was very difficult. Luckily I was able to sovle it with a lot of if statements and by switching to using arrays.
