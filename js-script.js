@@ -15,7 +15,23 @@ function operate(operation, num1, num2)
     }
     else if(operation === "/")
     {
-        return num1/num2;
+        //cannot divide by 0
+        if(num2 == 0)
+        {
+            num = [];
+            num1 = [];
+            num2 = [];
+            operating = false;
+            index = 0;
+            total = 0;
+            solved = true;
+            return "ERROR! HIT CA!";
+        }
+        else
+        {
+            return num1/num2;
+        }
+        
     }
 }
 
@@ -112,11 +128,21 @@ for(let i = 0; i < btn.length; i++)
 
             total = operate(num[index], num1, num2);
 
-            input.value = total;//displays value
+            //checks for errors
+            if(isNaN(total) == true || total == undefined)
+            {
+                input.value = "ERROR!";
+            }
+            else
+            {
+                input.value = total;//displays value
+            }
+            
+            console.log(`${num1}, ${num2}, ${total}`);
 
             //resets everything
             num = [];
-            num1 = [];
+            num1 = [0];
             num2 = [];
             operating = false;
             index = 0;

@@ -6,6 +6,7 @@ input::-webkit-inner-spin-button {
 
 body
 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,11 +17,19 @@ body
 h1
 {
     margin: 15px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+
 }
 
 input{
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    height: 15px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 7px;
 }
 
 #container
@@ -29,7 +38,7 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 15px;
     border-radius: 15px;
 }
@@ -47,11 +56,28 @@ button
    width: 30px;
    justify-content: center;
    margin: 4px;
+   cursor: pointer;
+   color: red;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background-color: rgb(223, 215, 215);
+}
+
+button:hover
+{
+    background-color: rgb(168, 168, 168);
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+button:active
+{
+    background-color: red;
+    color: black;
 }
 
 #buttons
 {
-   border: 1px solid black;
+   border: 2px solid black;
    border-radius: 10px;
    padding: 5px;
 }
